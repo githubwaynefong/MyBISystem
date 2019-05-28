@@ -1,0 +1,32 @@
+一条原始log日志：
+	group-0 : 120.196.145.58 - - [11/Dec/2013:10:00:32 +0800] "GET /__utm.gif HTTP/1.1" 200 35 "http://easternmiles.ceair.com/flight/index.html" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36" "BIGipServermu_122.119.122.14=192575354.20480.0000;Webtrends=120.196.145.58.1386724976245806;uuid=5eb501f9-3586-4239-a15c-fe89aa14d624;userId=099;st=1" 1482 352 - easternmiles.ceair.com 794
+远端主机（访客IP地址）：
+	group-1 : 120.196.145.58
+远端登录名：
+	group-2 : -
+远端用户名：
+	group-3 : -
+服务器接收请求时间：
+	group-4 : 11/Dec/2013:10:00:32 +0800
+请求的第一行（请求方式、请求的URL、请求所用协议：文本协议）：
+	group-5 : GET /__utm.gif HTTP/1.1
+响应码（最后的请求状态）：
+	group-6 : 200
+返回的数据流量（以CLF格式显示的除HTTP头以外传送的字节数）：
+	group-7 : 35
+上一个访问的页面（访客来源）：
+	group-8 : http://easternmiles.ceair.com/flight/index.html
+访客浏览器信息：
+	group-9 : Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+Cookie信息（包含uuid/userId/sessiontime）：
+	group-10 : BIGipServermu_122.119.122.14=192575354.20480.0000;Webtrends=120.196.145.58.1386724976245806;uuid=5eb501f9-3586-4239-a15c-fe89aa14d624;userId=099;st=1
+接收的字节数（包括请求头的数据，并且不能为零）：
+	group-11 : 1482
+发送的字节数（包括请求头的数据，并且不能为零）：
+	group-12 : 352
+%{X-Forwarded-For}i：
+	group-13 : -
+访问主机地址：
+	group-14 : easternmiles.ceair.com
+服务器处理本请求所用时间，以微秒为单位：
+	group-15 : 794

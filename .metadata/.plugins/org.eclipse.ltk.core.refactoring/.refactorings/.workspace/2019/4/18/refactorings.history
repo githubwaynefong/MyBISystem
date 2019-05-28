@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/MyExamples_Hive/lib/log4j-1.2-api-2.11.2.jar" element2="/MyExamples_Hive/lib/log4j-api-2.11.2.jar" element3="/MyExamples_Hive/lib/log4j-core-2.11.2.jar" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1556630948894"/>
+</session>

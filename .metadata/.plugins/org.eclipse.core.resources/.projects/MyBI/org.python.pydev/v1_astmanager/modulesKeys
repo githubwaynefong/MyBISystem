@@ -1,0 +1,15 @@
+MODULES_MANAGER_V2
+com.__init__|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\__init__.py
+com.cal.__init__|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\__init__.py
+com.cal.cluster_user|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\cluster_user.py
+com.cal.conversion|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\conversion.py
+com.cal.etl_clickstream|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\etl_clickstream.py
+com.cal.exe_hql|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\exe_hql.py
+com.cal.export|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\export.py
+com.cal.import|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\import.py
+com.driver.__init__|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\driver\__init__.py
+com.driver.controller|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\driver\controller.py
+com.utls.__init__|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\__init__.py
+com.utls.hive|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\hive.py
+com.utls.pro_env|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\pro_env.py
+com.utls.sqoop|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\sqoop.py

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="getFlagStr" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="getFlagStr"/>
+			<item value="IpParser"/>
+			<item value="loginfos"/>
+			<item value="*"/>
+			<item value="books*"/>
+			<item value="pay***"/>
+			<item value="sessionId"/>
+			<item value="com/cal/"/>
+		</list>
+		<list key="replacehistory">
+			<item value="logInfos"/>
+			<item value="_"/>
+			<item value="*books"/>
+			<item value="***pay"/>
+			<item value="步骤"/>
+			<item value="LogParser Index"/>
+			<item value="sqoop_type"/>
+			<item value="模式"/>
+		</list>
+	</section>
+</section>

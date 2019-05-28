@@ -1,0 +1,24 @@
+org.apache.hadoop.conf.Configuration
+org.apache.hadoop.fs.Path
+org.apache.hadoop.io.Text
+org.apache.hadoop.io.LongWritable
+org.apache.hadoop.io.NullWritable
+org.apache.hadoop.io.WritableComparable
+org.apache.hadoop.io.WritableComparator
+		--hadoop-common-2.9.2.jar
+		--路径：/opt/hadoop-2.9.2/share/hadoop/common/
+
+
+org.apache.hadoop.mapreduce.Mapper
+org.apache.hadoop.mapreduce.Partitioner
+org.apache.hadoop.mapreduce.Reducer
+org.apache.hadoop.mapreduce.lib.input.FileInputFormat
+org.apache.hadoop.mapreduce.lib.output.FileOutputFormat
+org.apache.hadoop.mapreduce.lib.output.TextOutputFormat
+		--hadoop-mapreduce-client-core-2.9.2.jar
+		--路径：/opt/hadoop-2.9.2/share/hadoop/mapreduce
+
+
+org.apache.hadoop.hive.ql.exec.UDF
+		--hive-exec-2.3.4.jar
+		--路径：/opt/apache-hive-2.3.4-bin/lib

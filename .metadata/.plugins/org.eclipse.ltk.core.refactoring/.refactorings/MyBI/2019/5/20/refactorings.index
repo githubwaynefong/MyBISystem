@@ -1,0 +1,7 @@
+1557900781597	Rename resource 'hive_tables'
+1557900794475	Rename resource 'mysql_tables'
+1557904271986	Rename resource 'tables_init_hive'
+1557904295345	Rename resource 'temp_tables'
+1557904538581	Rename resource 'tables_init_in_hive'
+1557904552570	Rename resource 'tables_init_in_mysql'
+1557996905054	Rename resource 'table1.xml'

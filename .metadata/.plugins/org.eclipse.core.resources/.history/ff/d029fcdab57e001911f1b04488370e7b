@@ -1,0 +1,18 @@
+--点击流日志（结构化）数据表
+DROP TABLE IF EXISTS clickstream_log;
+CREATE TABLE IF NOT EXISTS clickstream_log(
+	ipAddress STRING			COMMENT 'IP地址',
+	uniqueId STRING				COMMENT '用户的唯一编号uuid',
+	url STRING					COMMENT '用户访问的链接',
+	sessionId STRING			COMMENT 'Session的唯一编号',
+	sessionTimes INT			COMMENT 'Session的次数',
+	areaAddress STRING			COMMENT '发生点击行为的地区',
+	localAddress STRING			COMMENT '发生点击行为的详细地址',
+	browserType STRING			COMMENT '用户浏览器信息',
+	operationSys STRING			COMMENT '用户操作系统信息',
+	referUrl STRING				COMMENT '上一个浏览的网页',
+	receiveTime BIGINT			COMMENT '日志接收服务器接收时间',
+	userId STRING				COMMENT '用户的账号',
+	csvp INT					COMMENT '该点击行为在其Session中的顺序'
+) PARTITIONED BY (dt STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';

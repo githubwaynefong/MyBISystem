@@ -1,0 +1,91 @@
+-- VERSION_5
+-- START DISKCACHE_2
+D:\myWorkspaces\eclipse-workspace\MyBISystem\.metadata\.plugins\org.eclipse.core.resources\.projects\MyBI\com.python.pydev.analysis\v2_indexcache
+com.utls.hive|1558364512164595000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\hive.py
+com.utls.sqoop|1558364512188018000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\sqoop.py
+com.cal.exe_hql|1558364512168497000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\exe_hql.py
+com.utls.__init__|1547129641974459000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\__init__.py
+com.__init__|1547129577463043000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\__init__.py
+com.driver.__init__|1558016883876241000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\driver\__init__.py
+com.cal.__init__|1547129602153320000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\__init__.py
+com.cal.export|1558256416305837000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\export.py
+com.cal.cluster_user|1558961092784775000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\cluster_user.py
+com.utls.pro_env|1558280562386123000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\pro_env.py
+com.cal.conversion|1558789896990609000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\conversion.py
+com.driver.controller|1558792373426350000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\driver\controller.py
+com.cal.etl_clickstream|1558703732242322000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\etl_clickstream.py
+com.cal.import|1558364829449643000|D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\import.py
+-- END DISKCACHE
+-- START DICTIONARY
+27
+19=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\sqoop.py
+17=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\hive.py
+8=com.cal.export
+2=com.cal.cluster_user
+23=SqoopUtil
+11=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\import.py
+4=com.cal.conversion
+6=com.cal.etl_clickstream
+9=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\driver\controller.py
+25=Sqoop_Export.__init__
+21=Sqoop_Import
+3=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\conversion.py
+15=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\utls\pro_env.py
+18=com.utls.hive
+20=com.utls.sqoop
+14=com.cal.exe_hql
+22=HiveUtil
+27=Sqoop_Import.task_type_resolve_customize
+26=Sqoop_Import.__init__
+24=Sqoop_Export
+16=com.utls.pro_env
+5=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\etl_clickstream.py
+13=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\exe_hql.py
+10=com.driver.controller
+1=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\cluster_user.py
+12=com.cal.import
+7=D:\myWorkspaces\eclipse-workspace\MyBISystem\MyBI\com\cal\export.py
+-- END DICTIONARY
+-- START TREE 1
+26
+clu|1|cluster_output!1^53#5*18@
+con|1|conversion_middle_result_path!3^114#5*35@
+cou|1|count_urls!3^45#5*34@
+dat|1|dateStr!5^9#5*51@
+dt|4|dt!7^47#5*67@dt!9^20#5*83@dt!11^63#5*99@dt!13^55#5*115@
+end|2|end!3^104#5*35@end_time!1^115#5*19@
+ext|1|extract_data!3^35#5*34@
+get|2|get_result!3^69#5*34@get_finalresult!1^80#5*18@
+had|2|HADOOP_HOME!15^15#1*131@HADOOP_PATH!15^17#1*131@
+hiv|4|HiveUtil!17^6#7*145@hive_job_type!13^54#5*115@HIVE_PATH!15^21#1*131@HIVE_HOME!15^19#1*131@
+hql|2|hql!5^28#5*51@hqls!13^62#5*115@
+inp|1|inputPath!5^12#5*51@
+jav|1|JAVA_HOME!15^28#1*131@
+mod|1|moduleName!9^31#9*83@
+out|1|outputPath!5^15#5*51@
+pre|1|prepare_normaliz!1^7#5*18@
+pro|5|PROJECT_CONF_DIR!15^6#1*131@PROJECT_TMP_DIR!15^12#1*131@PROJECT_DIR!15^4#1*131@PROJECT_LIB_DIR!15^10#1*131@PROJECT_CONF_TABLES_DIR!15^8#1*131@
+res|2|resolve_conf!13^9#5*114@resolve_conf!3^9#5*34@
+she|2|shell!9^35#13*83@shell!5^19#5*51@
+sqo|5|Sqoop_Import!11^8#7*97@SqoopUtil!19^17#7*161@Sqoop_Export!7^8#7*65@SQOOP_HOME!15^23#1*131@SQOOP_PATH!15^25#1*131@
+sta|2|start!3^101#5*35@start_time!1^114#5*19@
+tod|1|today!9^15#5*83@
+url|1|urls!3^107#5*35@
+wor|1|workflow!9^26#5*83@
+xml|1|xmlTree!9^23#5*83@
+yes|1|yestoday!9^17#5*83@
+-- END TREE
+-- START TREE 2
+11
+__i|4|__init__!21&11^19#9*98@__init__!22&17^8#9*146@__init__!23&19^26#9*162@__init__!24&7^17#9*66@
+dri|1|driver!23&19^161#9*162@
+dt|4|dt!24&7^11#5*67@dt!25&7^19#9*67@dt!21&11^11#5*99@dt!26&11^21#9*99@
+exe|2|execute_shell!22&17^12#9*146@execute_shell!23&19^124#9*162@
+exp|1|EXPORT!23&19^20#5*163@
+for|1|format_shell!23&19^149#9*162@
+imp|3|import_condition!21&11^12#5*99@import_condition!27&11^32#13*99@IMPORT!23&19^19#5*163@
+key|3|key_value_resolve_customize!23&19^119#9*162@key_value_resolve_customize!21&11^41#9*98@key_value_resolve_customize!24&7^24#9*66@
+res|1|resolve_conf!23&19^30#9*162@
+sqo|3|sqoop_type!23&19^21#5*163@sqoop_type!25&7^21#9*67@sqoop_type!26&11^23#9*99@
+tas|2|task_type_resolve_customize!23&19^115#9*162@task_type_resolve_customize!21&11^26#9*98@
+-- END TREE

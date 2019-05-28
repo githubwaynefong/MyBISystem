@@ -1,0 +1,9 @@
+--转化率维度数据提取表（从clickstream_log表中提取）
+DROP TABLE IF EXISTS conversion_input;
+CREATE TABLE IF NOT EXISTS conversion_input(
+	url STRING,					--用户访问的链接
+	uuid STRING,				--通用唯一识别码
+	sessionId STRING,			--Session的唯一编号
+	csvp INT					--该点击行为在其Session中的顺序
+) PARTITIONED BY(dt STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';

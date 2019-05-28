@@ -1,0 +1,14 @@
+org.apache.hadoop.io.Text
+org.apache.hadoop.io.LongWritable
+		--hadoop-common-2.9.2.jar
+		--路径：/opt/hadoop-2.9.2/share/hadoop/common/
+
+
+org.apache.hadoop.mapreduce.Mapper
+		--hadoop-mapreduce-client-core-2.9.2.jar
+		--路径：/opt/hadoop-2.9.2/share/hadoop/mapreduce
+
+
+org.apache.hadoop.hive.ql.exec.UDF
+		--hive-exec-2.3.4.jar
+		--路径：/opt/apache-hive-2.3.4-bin/lib

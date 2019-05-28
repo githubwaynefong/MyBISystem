@@ -1,0 +1,17 @@
+# -*- coding:UTF-8 -*-
+import sys
+import os
+from com.utls.pro_env import HADOOP_HOME, PROJECT_LIB_DIR
+
+if __name__ == '__main__':
+    #由日志服务器上传至HDFS的目录下，按照时间进行存储
+    inputPath = "/tmp/apache_log/" + sys.argv[0]
+    
+    #输出目录为Clickstream_log表的分区目录下
+    outputPath = "/user/hive/warehouse/clickstream_log/dt=" + sys.argv[0]
+    
+    shell = HADOOP_HOME + "hadoop jar " + PROJECT_LIB_DIR + \
+        "clickstream_etl.jar com.etl.mapreduce" + \
+        inputPath + " " + outputPath 
+        
+    os.system(shell)
