@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<root>
+	<sqoop-shell type="import">
+		<param key="connect">jdbc:mysql://master:3306/booksys</param>
+		<param key="username">hadoop</param>
+		<param key="password">hivepwd</param>
+		<param key="query">
+		  'select id  
+		  		  ,customer_id 
+		  		  ,order_status 
+		  		  ,order_date 
+		  		  ,shipping_handling 
+		  		  ,ship_to_name 
+		  		  ,ship_to_address_id 
+		  		  ,subtotal 
+		  		  ,tax 
+		  		  ,creditcard_type 
+		  		  ,creditcard_number 
+		  		  ,expiration_date 
+		  		  ,name_on_card 
+		  		  ,approval_code 
+		  		  ,modify_date
+		   from orders 
+		   where date_format(modify_date, "%Y-%m-%d") \$CONDITIONS
+		   and $CONDITIONS'
+		</param>
+		<param key="split-by">id</param>
+		<param key="target-dir">/user/sqoop_tmp/orders</param>
+		<param key="m">1</param>
+		<param key="hive-import"></param>
+		<param key="hive-overwrite"></param>
+		<param key="hive-table">booksys.orders</param>
+		<param key="hive-partition-key">dt</param>
+		<param key="hive-partition-value">\$dt</param>
+		<param key="hive-delims-replacement">'\\t'</param>
+		<param key="null-string">'\\N'</param>
+		<param key="null-non-string">'\\N'</param>
+		<param key="map-column-hive">
+			'order_date=timestamp
+            ,expiration_date=timestamp
+		    ,modify_date=timestamp'
+		</param>
+	</sqoop-shell>
+	<sqoop-shell type="export">
+		<param key="connect">jdbc:mysql://master:3306/booksys</param>
+		<param key="username">hadoop</param>
+		<param key="password">hivepwd</param>
+		<param key="table">orders_export</param>
+		<param key="export-dir">/user/hive/warehouse/booksys.db/orders/dt=\$dt</param>
+		<param key="hive-partition-key">dt</param>
+		<param key="hive-partition-value">\$dt</param>
+		<param key="input-fields-terminated-by">'\0001'</param>
+		<param key="m">1</param>
+		<param key="input-null-string">'\\N'</param>
+		<param key="input-null-non-string">'\\N'</param>
+		<param key="update-key">id</param>
+		<param key="update-mode">allowinsert</param>
+	</sqoop-shell>
+</root>

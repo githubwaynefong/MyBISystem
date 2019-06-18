@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<root>
+	<task type="all">
+		<table>orders</table><!-- 数据库中需要导出的第一张表名 -->
+		<!-- 其他需要导出的表名 -->
+	</task>
+</root>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<root>
+	<Job type="etl_db"><!-- 表示可执行的type：ETL -->
+		<hql><![CDATA[
+			select id 
+		  		  ,customer_id 
+		  		  ,order_status 
+		  		  ,order_date 
+		  		  ,shipping_handling 
+		  		  ,ship_to_name 
+		  		  ,ship_to_address_id 
+		  		  ,subtotal 
+		  		  ,tax 
+		  		  ,creditcard_type 
+		  		  ,creditcard_number 
+		  		  ,expiration_date 
+		  		  ,name_on_card 
+		  		  ,approval_code 
+		  		  ,modify_date
+			from (
+				select *, row_number() over(distribute by id sort by id, modify_date desc) rownum
+				from (
+					select * from booksys.orders where dt < \$dt
+					union all
+					select * from booksys.orders where dt = \$dt
+				) t1
+			) t2
+			where rownum = 1
+		]]><!-- 使用CDATA，避免小于号被解析成新元素的开始 -->
+		</hql><!-- 实现方法1：自定义rownum()，all与add合并排序，达到去重 -->
+		<hql><![CDATA[
+		    insert overwrite table booksys.orders partition (dt)
+			select id 
+		  		  ,customer_id 
+		  		  ,order_status 
+		  		  ,order_date 
+		  		  ,shipping_handling 
+		  		  ,ship_to_name 
+		  		  ,ship_to_address_id 
+		  		  ,subtotal 
+		  		  ,tax 
+		  		  ,creditcard_type 
+		  		  ,creditcard_number 
+		  		  ,expiration_date 
+		  		  ,name_on_card 
+		  		  ,approval_code 
+		  		  ,modify_date
+		  		  ,date_format(modify_date,'yyyy-MM-dd')
+			from (
+				select t1.*
+				from (select * from booksys.orders where dt < \$dt) t1
+				left outer join (select * from booksys.orders where dt = \$dt) t2 on t1.id = t2.id
+				where t2.id is null
+				union all
+				select * from booksys.orders where dt = \$dt
+			) t3
+		]]></hql><!-- 实现方法2：all对add取查集，后与add并，达到去重 -->
+	</Job>
+	<Job type="analysis"><!-- 表示可执行的type：数据分析 -->
+		<hql><![CDATA[select * from booksys.orders where dt = \$dt]]></hql><!-- 表示执行的HQL语句，$dt包含了时间信息 -->
+	</Job>
+</root>

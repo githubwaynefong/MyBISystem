@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<root>
+	<!-- 第一次全量时，改type为'all'；第二次及之后增量时，改type为'add'-->>
+	<task type="all">
+		<table>orders</table><!-- 数据库中需要增量导入的第一张表名 -->
+		<!-- 其他需要增量导入的表名 -->
+	</task>
+</root>
