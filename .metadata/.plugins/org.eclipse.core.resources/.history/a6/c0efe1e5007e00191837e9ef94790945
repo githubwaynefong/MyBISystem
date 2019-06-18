@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE xml>
-<root>
-	<pras>
-		<url>url1</url><!-- 图书展示页面正则匹配 -->>
-		<url>url2</url><!-- 订单页面正则匹配 -->>
-		<url>url3</url><!-- 支付完成页面正则匹配 -->>
-	</pras>
-</root>

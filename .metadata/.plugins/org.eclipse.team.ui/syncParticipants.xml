@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <syncparticipants>
-<participant displayName="Git (MyBI)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1558612429232">
+<participant displayName="Git (MyBI)" id="org.eclipse.egit.ui.modelCompareParticipant" secondary_id="1560847503229">
 <data forceFetch="false" root="false">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS org.eclipse.team.ui.MODEL_PARTICIPANT_DESCRIPTION="MyBI" startupAction="none">
 <org.eclipse.team.ui.MODEL_PARTICIPANT_REFRESH_SCHEDULE org.eclipse.team.ui.CTX_REFRESHSCHEDULE_ENABLED="false" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_INTERVAL="3600" org.eclipse.team.ui.CTX_REFRESHSCHEDULE_RUNONCE="false"/>
@@ -10,7 +10,7 @@
 </mappings>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_MAPPINGS>
 </org.eclipse.team.ui.MODEL_PARTICIPANT_SETTINGS>
-<gitSynchronizeData container="D:/myWorkspaces/eclipse-workspace/MyBISystem/MyBI" dstRev="HEAD" inludeLocal="true" srcRev="HEAD"/>
+<gitSynchronizeData container="D:/myWorkspaces/eclipse-workspace/MyBISystem/MyBI_JUtils" dstRev="refs/remotes/origin/master" inludeLocal="true" srcRev="HEAD"/>
 </data>
 </participant>
 </syncparticipants>

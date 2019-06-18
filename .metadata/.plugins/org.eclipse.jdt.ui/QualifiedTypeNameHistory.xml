@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.hadoop.hive.ql.exec.UDFArgumentException"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="org.apache.hadoop.fs.FileSystem"/>
 <fullyQualifiedTypeName name="org.apache.hadoop.fs.Path"/>
 <fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.sun.javafx.css.SizeUnits"/>
 </qualifiedTypeNameHistroy>
